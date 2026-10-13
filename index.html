@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>علاء الكراباني</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f7f5f0;
+            color: #171717;
+            font-family: Arial, Tahoma, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 7%;
+            background: rgba(255, 255, 255, .85);
+            border-bottom: 1px solid #e7e2d9;
+        }
+
+        .logo {
+            color: #a47a35;
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #a47a35;
+        }
+
+        .hero {
+            min-height: 70vh;
+            display: grid;
+            place-items: center;
+            padding: 70px 7%;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .eyebrow {
+            margin-bottom: 18px;
+            color: #a47a35;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            margin-bottom: 22px;
+            font-size: clamp(42px, 8vw, 86px);
+            line-height: 1.1;
+        }
+
+        h1 span {
+            color: #a47a35;
+        }
+
+        .hero p {
+            margin: 0 auto 30px;
+            max-width: 580px;
+            color: #777;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: .3s ease;
+        }
+
+        .button-primary {
+            background: #171717;
+            color: #fff;
+        }
+
+        .button-primary:hover {
+            background: #a47a35;
+            transform: translateY(-3px);
+        }
+
+        .button-outline {
+            border: 1px solid #171717;
+            color: #171717;
+        }
+
+        .button-outline:hover {
+            background: #171717;
+            color: #fff;
+        }
+
+        footer {
+            padding: 25px;
+            border-top: 1px solid #e7e2d9;
+            color: #888;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                gap: 14px;
+            }
+
+            .hero {
+                min-height: 65vh;
+                padding: 45px 20px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ALAA ALKRABANI</div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عنّي</a>
+        <a href="#work">أعمالي</a>
+        <a href="#contact">تواصل</a>
+    </nav>
+</header>
+
+<main id="home">
+    <section class="hero">
+        <div class="hero-content">
+            <div class="eyebrow">PERSONAL WEBSITE</div>
+
+            <h1>
+                مرحبًا، أنا <span>علاء</span>
+            </h1>
+
+            <p>
+                هذا موقعي الشخصي، أشارك فيه أعمالي ومشاريعي
+                وخبرتي وكل ما أعمل عليه في مجال الموضة والتجارة والتقنية.
+            </p>
+
+            <div class="buttons">
+                <a href="#work" class="button button-primary">
+                    شاهد أعمالي
+                </a>
+
+                <a href="#contact" class="button button-outline">
+                    تواصل معي
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    © 2026 ALAA ALKRABANI — جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
