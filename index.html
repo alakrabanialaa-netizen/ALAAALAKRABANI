@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> ALAA ALAKRABANI | علاء العقرباني </title>
+    <title>ALAA ALAKRABANI | علاء الكراباني</title>
+
     <meta
         name="description"
-        content="الموقع الشخصي لعلاء العقرباني، مؤسس Melekler Fashion ومهتم بالتجارة الإلكترونية والتقنية."
+        content="الموقع الشخصي لعلاء الكراباني، مؤسس Melekler Fashion وKozmatik SY ومهتم بالتجارة الإلكترونية والتقنية."
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet"
@@ -27,7 +29,6 @@
             --white: #ffffff;
             --muted: #77736c;
             --line: #e8e1d5;
-            --green: #254c42;
         }
 
         * {
@@ -47,6 +48,13 @@
             font-family: "Cairo", Tahoma, Arial, sans-serif;
         }
 
+        h1,
+        h2,
+        h3,
+        .brand {
+            font-family: "Cairo", Tahoma, Arial, sans-serif;
+        }
+
         a {
             color: inherit;
             text-decoration: none;
@@ -58,6 +66,7 @@
         }
 
         /* Header */
+
         .site-header {
             position: fixed;
             top: 0;
@@ -65,7 +74,7 @@
             left: 0;
             z-index: 100;
             border-bottom: 1px solid rgba(255, 255, 255, .2);
-            background: rgba(247, 244, 238, .86);
+            background: rgba(247, 244, 238, .88);
             backdrop-filter: blur(18px);
             -webkit-backdrop-filter: blur(18px);
         }
@@ -133,7 +142,6 @@
             padding: 10px 18px !important;
             border: 1px solid var(--black);
             border-radius: 30px;
-            color: var(--black);
         }
 
         .nav-contact::after {
@@ -146,6 +154,7 @@
         }
 
         /* Hero */
+
         .hero {
             position: relative;
             display: grid;
@@ -344,7 +353,8 @@
             transform: translateX(50%);
         }
 
-        /* General sections */
+        /* Sections */
+
         .section {
             padding: 105px 0;
         }
@@ -395,6 +405,7 @@
         }
 
         /* About */
+
         .about-grid {
             display: grid;
             grid-template-columns: .85fr 1.15fr;
@@ -406,8 +417,7 @@
             position: relative;
             min-height: 380px;
             border: 1px solid var(--line);
-            background:
-                linear-gradient(145deg, #eee7dc, #fdfbf7);
+            background: linear-gradient(145deg, #eee7dc, #fdfbf7);
             overflow: hidden;
         }
 
@@ -465,6 +475,7 @@
         }
 
         /* Services */
+
         .service-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -506,6 +517,7 @@
         }
 
         /* Projects */
+
         .project-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -590,7 +602,52 @@
             color: var(--black);
         }
 
+        /* Kozmatik card */
+
+        .kozmatik-project {
+            background:
+                radial-gradient(
+                    circle at 85% 18%,
+                    rgba(122, 89, 42, .20),
+                    transparent 28%
+                ),
+                linear-gradient(
+                    145deg,
+                    #242019,
+                    #403526 55%,
+                    #181715
+                );
+            border-color: rgba(178, 138, 74, .45);
+            color: #ffffff;
+        }
+
+        .kozmatik-project::before {
+            border-color: rgba(216, 184, 121, .42);
+        }
+
+        .kozmatik-project h3 {
+            color: #f4dfb2;
+        }
+
+        .kozmatik-project p {
+            color: #d2c8b8;
+        }
+
+        .kozmatik-project .project-tag {
+            background: #c0944e;
+            color: #171717;
+        }
+
+        .kozmatik-project .project-link {
+            color: #e1bd78;
+        }
+
+        .kozmatik-project .project-link:hover {
+            color: #ffffff;
+        }
+
         /* Contact */
+
         .contact-box {
             display: grid;
             grid-template-columns: 1fr .8fr;
@@ -628,7 +685,7 @@
             transition: .3s ease;
         }
 
-        .contact-link span {
+        .contact-link span:last-child {
             color: var(--gold-light);
             font-size: 19px;
         }
@@ -640,6 +697,7 @@
         }
 
         /* Footer */
+
         footer {
             padding: 25px 0;
             background: #121212;
@@ -648,7 +706,8 @@
             text-align: center;
         }
 
-        /* Mobile */
+        /* Responsive */
+
         @media (max-width: 850px) {
             .nav {
                 min-height: 70px;
@@ -739,7 +798,6 @@
 
 <body>
 
-    <!-- Header -->
     <header class="site-header">
         <div class="container nav">
 
@@ -761,7 +819,6 @@
 
     <main>
 
-        <!-- Hero -->
         <section class="hero" id="home">
             <div class="container hero-grid">
 
@@ -819,12 +876,10 @@
             <span class="scroll-note">SCROLL TO EXPLORE</span>
         </section>
 
-        <!-- About -->
         <section class="section section-light" id="about">
             <div class="container about-grid">
 
-                <div class="about-visual">
-                </div>
+                <div class="about-visual"></div>
 
                 <div class="about-text">
                     <div class="section-heading">
@@ -832,8 +887,6 @@
 
                         <h2>
                             شخص واحد،
-                              
-
                             <span style="color: var(--gold);">
                                 أفكار كثيرة
                             </span>
@@ -868,7 +921,6 @@
             </div>
         </section>
 
-        <!-- Services -->
         <section class="section section-dark" id="services">
             <div class="container">
 
@@ -921,9 +973,6 @@
             </div>
         </section>
 
-        
-
-        <!-- Projects -->
         <section class="section section-light" id="projects">
             <div class="container">
 
@@ -933,14 +982,17 @@
                     <h2>مشاريعي الحالية</h2>
 
                     <p>
-                        هذه بعض المشاريع التي أعمل عليها وأطوّرها خطوة بعد خطوة.
+                        مشاريع أعمل عليها وأطوّرها في التجارة الإلكترونية
+                        والتقنية والتصميم.
                     </p>
                 </div>
 
                 <div class="project-grid">
 
                     <article class="project-card">
-                        <span class="project-tag">FASHION & E-COMMERCE</span>
+                        <span class="project-tag">
+                            FASHION &amp; E-COMMERCE
+                        </span>
 
                         <h3>Melekler Fashion</h3>
 
@@ -949,58 +1001,42 @@
                             تسوق عصرية ونظام لإدارة المنتجات والمخزون.
                         </p>
 
-                        <!-- غيّر الرابط هنا إلى رابط متجرك الحقيقي -->
                         <a
                             href="https://melekle-fashion.onrender.com"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="project-link"
                         >
                             زيارة المتجر ←
                         </a>
                     </article>
 
-                    <article class="project-card">
-                        <span class="project-tag">PERSONAL PROJECT</span>
+                    <article class="project-card kozmatik-project">
+                        <span class="project-tag">
+                            BEAUTY &amp; E-COMMERCE
+                        </span>
 
-                        <h3>مشروعي القادم</h3>
+                        <h3>Kozmatik SY</h3>
 
                         <p>
-                            مساحة جديدة للأفكار والمشاريع الرقمية. سيتم تحديث
-                            هذا القسم مع إطلاق المشروع القادم.
+                            متجر إلكتروني متخصص بمنتجات التجميل والعناية،
+                            بتصميم فاخر وتجربة تسوق سهلة وعصرية.
                         </p>
 
-                        <a href="#contact" class="project-link">
-                            تابع الجديد ←
+                        <a
+                            href="https://kozmatik-sy.onrender.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            زيارة المشروع ←
                         </a>
                     </article>
 
                 </div>
             </div>
         </section>
-        
 
-        <article class="project-card">
-    <span class="project-tag">E-COMMERCE PROJECT</span>
-
-    <h3>Kozmatik SY</h3>
-
-    <p>
-        مشروع إلكتروني متخصص في عرض المنتجات وتقديم تجربة تسوق
-        سهلة وعصرية للعملاء.
-    </p>
-
-    <a
-        href="https://kozmatik-sy.onrender.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="project-link"
-    >
-        زيارة المشروع ←
-    </a>
-</article>
-
-        
-        <!-- Contact -->
         <section class="section section-dark" id="contact">
             <div class="container contact-box">
 
@@ -1024,29 +1060,28 @@
 
                 <div class="contact-links">
 
-                    <!-- غيّر رقم الواتساب هنا -->
                     <a
                         href="https://wa.me/905550651100"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="contact-link"
                     >
                         <span>واتساب</span>
                         <span>↗</span>
                     </a>
 
-                    <!-- غيّر اسم المستخدم هنا -->
                     <a
                         href="https://www.instagram.com/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="contact-link"
                     >
                         <span>Instagram</span>
                         <span>↗</span>
                     </a>
 
-                    <!-- غيّر البريد هنا -->
                     <a
-                        href="mailto:your-email@example.com"
+                        href="mailto:alakrabanialaa@gmail.com"
                         class="contact-link"
                     >
                         <span>alakrabanialaa@gmail.com</span>
